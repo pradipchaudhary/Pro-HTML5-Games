@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro-HTML5-Games</title>
-    <meta name="description" content="Learn to Build your Own Games using HTML 5 and JavaScript .">
-</head>
-<body onload="pagesLoaded();">
-    <canvas width="800" height="800" id="testcanvas" style="border:1px solid gray"></canvas>
-    <script>
-        function pagesLoaded(){
-            console.log("Hello World!");
-            // Get a handle to the canvas object
-            var canvas = document.getElementById("testcanvas");
-            console.log(canvas);
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Pro-HTML5-Games ❤️‍🔥</title>
+		<meta
+			name="description"
+			content="Learn to Build your Own Games using HTML 5 and JavaScript. ❤️‍🔥" />
+	</head>
+	<body onload="pagesLoaded();">
+		<canvas
+			width="800"
+			height="800"
+			id="testcanvas"
+			style="border: 1px solid gray"></canvas>
+		<script>
+			function pagesLoaded() {
+				console.log("Hello World!");
+				// Get a handle to the canvas object
+				var canvas = document.getElementById("testcanvas");
+				console.log(canvas);
 
-            // Get tha 2d context for the canvas object
-            var context = canvas.getContext("2d");
-            console.log(context);
+				// Get tha 2d context for the canvas object
+				var context = canvas.getContext("2d");
+				// console.log(context);
 
-            // Drowning Code here...
+				// Drowning Code here... :hearts
 
-            // Rectangle Drawing
-            // context.fillRect(300, 300, 200, 200);
-            // context.strokeRect(590, 10, 200, 200);
-            // context.clearRect(400, 400, 50, 50);
+				// * Rectangle Drawing 😃 😄
+				context.fillRect(300, 300, 200, 200);
+				context.strokeRect(590, 10, 200, 200);
+				context.clearRect(400, 400, 50, 50);
 
-            // ! DRAWING COMPLEX SHAPES HERE
+				// ! DRAWING COMPLEX SHAPES HERE
 
-            // Drawing fill triangle`
-            context.beginPath();
-            context.moveTo(10, 120);
-            context.lineTo(10, 180);
-            context.lineTo(110, 150);
-            context.fill()
-
-            
-        }   
-    </script>
-</body>
+				// Drawing fill triangle`
+				context.beginPath();
+				context.moveTo(10, 120); // Start drawing at 10, 120
+				context.lineTo(10, 180);
+				context.lineTo(110, 150);
+				context.fill(); // Close the shape and fill it out
+			}
+		</script>
+	</body>
 </html>
