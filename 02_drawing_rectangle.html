@@ -14,7 +14,7 @@
 		<canvas
 			width="600"
 			height="600"
-			style="border: 1px solid gray"
+			style="border: 1px solid #656565; background-color: #b7b7b7"
 			id="testcanvas"></canvas>
 		<script>
 			function pagesLoaded() {
@@ -25,12 +25,12 @@
 				var context = canvas.getContext("2d");
 
 				// // Drawing code here..
-				//          1. fillRect(0, 0, canvas.width, canvas.height);
-				//          2. strokeRect(0, 0, canvas.width, canvas.height);
-				//          3. clearRect(0, 0, canvas.width, canvas.height);
+				//     1. fillRect(0, 0, canvas.width, canvas.height);
+				//     2. strokeRect(0, 0, canvas.width, canvas.height);
+				//     3. clearRect(0, 0, canvas.width, canvas.height);
 				context.fillRect(50, 50, 100, 100);
 				context.strokeRect(100, 100, 100, 100);
-				context.clearRect(75, 75, 25, 25);
+				context.clearRect(75, 75, 50, 50);
 			}
 		</script>
 	</body>
