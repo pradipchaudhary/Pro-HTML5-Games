@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Drawing Rectangle inside the Canvas.</title>
+	</head>
+	<body onload="pagesLoaded();">
+		<canvas
+			width="600"
+			height="600"
+			style="border: 1px solid gray"
+			id="testcanvas"></canvas>
+		<script>
+			function pagesLoaded() {
+				// Get a Canvas id
+				var canvas = document.getElementById("testcanvas");
+				console.log(canvas);
+
+				var context = canvas.getContext("2d");
+
+				// // Drawing code here..
+				//          1. fillRect(0, 0, canvas.width, canvas.height);
+				//          2. strokeRect(0, 0, canvas.width, canvas.height);
+				//          3. clearRect(0, 0, canvas.width, canvas.height);
+				context.fillRect(50, 50, 100, 100);
+				context.strokeRect(100, 100, 100, 100);
+				context.clearRect(75, 75, 25, 25);
+			}
+		</script>
+	</body>
+</html>

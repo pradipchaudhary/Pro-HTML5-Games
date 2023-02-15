@@ -30,21 +30,32 @@
 				var context = canvas.getContext("2d");
 				// console.log(context);
 
-				// Drowning Code here... :hearts
-
-				// * Rectangle Drawing 😃 😄
-				context.fillRect(300, 300, 200, 200);
-				context.strokeRect(590, 10, 200, 200);
-				context.clearRect(400, 400, 50, 50);
-
 				// ! DRAWING COMPLEX SHAPES HERE
 
 				// Drawing fill triangle`
 				context.beginPath();
-				context.moveTo(10, 120); // Start drawing at 10, 120
-				context.lineTo(10, 180);
-				context.lineTo(110, 150);
+				context.moveTo(20, 120); // Start drawing at 10, 120 point
+				context.lineTo(10, 180); // Drawing the line from the current point to x and y coordinates
+				context.lineTo(110, 150); // Drawing the line from the current point to x and y coordinates
 				context.fill(); // Close the shape and fill it out
+
+				// Draw Stocked triangles
+				context.beginPath();
+				context.moveTo(140, 160); //Start drawing at 140, 160
+				context.lineTo(140, 220);
+				context.lineTo(40, 190);
+				context.closePath();
+				context.stroke();
+
+				// Shape drawing
+				context.beginPath();
+				context.moveTo(400, 300);
+				context.lineTo(600, 600);
+				context.lineTo(400, 600);
+				context.lineTo(300, 600);
+				context.lineTo(200, 400);
+				context.closePath();
+				context.fill();
 			}
 		</script>
 	</body>
