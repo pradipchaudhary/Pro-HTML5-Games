@@ -1,62 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Pro-HTML5-Games ❤️‍🔥</title>
-		<meta
-			name="description"
-			content="Learn to Build your Own Games using HTML 5 and JavaScript. ❤️‍🔥" />
-	</head>
-	<body onload="pagesLoaded();">
-		<canvas
-			width="800"
-			height="800"
-			id="testcanvas"
-			style="border: 1px solid gray"></canvas>
-		<script>
-			function pagesLoaded() {
-				console.log("Hello World!");
-				// Get a handle to the canvas object
-				var canvas = document.getElementById("testcanvas");
-				console.log(canvas);
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pro-HTML5-Games</title>
+	<!-- Style link -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-				// Get tha 2d context for the canvas object
-				var context = canvas.getContext("2d");
-				// console.log(context);
+	<div id="wrapper">
+		<div id="gamecontainer">
+			<!-- Canvas -->
+			<canvas width="1000" height="800" style="border:1px solid green"></canvas>
 
-				// ! DRAWING COMPLEX SHAPES HERE
+		</div>
+	</div>
 
-				// Drawing fill triangle`
-				context.beginPath();
-				context.moveTo(20, 120); // Start drawing at 10, 120 point
-				context.lineTo(10, 180); // Drawing the line from the current point to x and y coordinates
-				context.lineTo(110, 150); // Drawing the line from the current point to x and y coordinates
-				context.fill(); // Close the shape and fill it out
-
-				// Draw Stocked triangles
-				context.beginPath();
-				context.moveTo(140, 160); //Start drawing at 140, 160
-				context.lineTo(140, 220);
-				context.lineTo(40, 190);
-				context.closePath();
-				context.stroke();
-
-				// Shape drawing
-				context.beginPath();
-				context.moveTo(400, 300);
-				context.lineTo(600, 600);
-				context.lineTo(400, 600);
-				context.lineTo(300, 600);
-				context.lineTo(200, 400);
-				context.closePath();
-				context.fill();
-			}
-		</script>
-	</body>
+	<!-- Script Link -->
+	<!-- <script src="assets/js/game.js"></script> -->
+</body>
 </html>
