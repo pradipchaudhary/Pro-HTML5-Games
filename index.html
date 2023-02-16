@@ -13,12 +13,39 @@
 	<div id="wrapper">
 		<div id="gamecontainer">
 			<!-- Canvas -->
-			<canvas width="1000" height="800" style="border:1px solid green"></canvas>
+			<canvas id="gameCanvas" width="1000" height="800" style="border:1px solid green"></canvas>
+
+			<div id="scorescreen" class="gamelayer">
+				<img id="togglemusic" src="assets/images/sound.png" alt="Toggle Music">
+				<img src="assets/images/prev.png" alt="Restart Level ">
+				<span id="score">Score: 0</span>
+			</div>
+			
+			<div id="gamestartscreen" class="gamelayer">
+				<img src="assets/images/play.jpg" alt="Play Game"><br>
+				<img src="assets/images/setting.png" alt="Settings">
+			</div>
+
+			<div id="levelselectscreen" class="gamelayer"></div>
+			<div id="loadingscreen" class="gamelayer">
+				<div id="loadingmessage"></div>
+			</div>
+
+			<div id="endingscreen" class="gamelayer">
+				<div>
+					<p id="endingmessage">The Level Is Over Message</p>
+					<p id="playcurrentlevel" class="endingoption"><img src="assets/images/prev.png" alt="Replay">Replay Current Level</p> Chapter 2 ■ Creating a Basic Game World 23
+					<p id="playnextlevel" class="endingoption">
+						<img src="assets/images/next.png" alt="Next">
+						Play Next Level</p>
+					<p id="returntolevelscreen" class="endingoption"><img src="images/icons/return.png" alt="Return">Return to Level Screen</p>
+				</div>
+			</div>
 
 		</div>
 	</div>
 
 	<!-- Script Link -->
-	<!-- <script src="assets/js/game.js"></script> -->
+	<script src="assets/js/game.js"></script>
 </body>
 </html>
